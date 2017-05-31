@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<title>Calculator</title>
+<meta name="author" content="Connor Beam">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+      <div class="col-xs-12">
+        <div class="vert-center" id="calculator" style="width:100%">
+          <h1>Calculate</h1>
+          <form>
+            <div>
+              <input type="text" id="display" disabled>
+            </div>
+            <div class="hash">
+              <input type="button" value="C" class="keys top" onclick='toScreen("c")'>
+              <input type="button" value="+" class="keys add" onclick='toScreen("+")'>
+            </div>
+            <div class="hash">
+              <input type="button" value="1" class="keys" onclick='toScreen("1")'>
+              <input type="button" value="2" class="keys" onclick='toScreen("2")'>
+              <input type="button" value="3" class="keys" onclick='toScreen("3")'>
+              <input type="button" value="-" class="keys" onclick='toScreen("-")'>
+            </div>
+            <div class="hash">
+              <input type="button" value="4" class="keys" onclick='toScreen("4")'>
+              <input type="button" value="5" class="keys" onclick='toScreen("5")'>
+              <input type="button" value="6" class="keys" onclick='toScreen("6")'>
+              <input type="button" value="*" class="keys" onclick='toScreen("*")'>
+            </div>
+            <div class="hash">
+              <input type="button" value="7" class="keys" onclick='toScreen("7")'>
+              <input type="button" value="8" class="keys" onclick='toScreen("8")'>
+              <input type="button" value="9" class="keys" onclick='toScreen("9")'>
+              <input type="button" value="/" class="keys" onclick='toScreen("/")'>
+            </div>
+            <div>
+              <input type="button" value="0" class="keys" onclick='toScreen("0")'>
+              <input type="button" value="." class="keys" onclick='toScreen(".")'>
+              <input type="button" value="=" class="keys equal" onclick='answer()'>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>
